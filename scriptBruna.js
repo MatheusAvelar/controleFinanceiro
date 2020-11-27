@@ -14,14 +14,14 @@ function adicionaLinha(idTabela) {
     var tabela = document.getElementById(idTabela);
     var numeroLinhas = tabela.rows.length;
     var linha = tabela.insertRow(numeroLinhas);
-    var celula1 = linha.insertCell(0);
-    var celula2 = linha.insertCell(1);   
-    var celula3 = linha.insertCell(2); 
-    var celula4 = linha.insertCell(3);
-    celula1.innerHTML = RetornaDataHoraAtual();
-    celula2.innerHTML = `<input type="text" id="descricao" name="codDescricao[` + contadorDescricao + `]" placeholder="Produto">`;
-    celula3.innerHTML = `<input type="text" id="valor" name="codValor[`+ contadorValor +`]" placeholder="Valor">`;
-    celula4.innerHTML =  "<button onclick='removeLinha(this)'>Remover</button>";
+    var celula0 = linha.insertCell(0);
+    var celula1 = linha.insertCell(1);   
+    var celula2 = linha.insertCell(2); 
+    var celula3 = linha.insertCell(3);
+    celula0.innerHTML = RetornaDataHoraAtual();
+    celula1.innerHTML = `<input type="text" id="descricao" name="codDescricao[` + contadorDescricao + `]" placeholder="Produto">`;
+    celula2.innerHTML = `<input type="text" id="valor" name="codValor[`+ contadorValor +`]" placeholder="Valor">`;
+    celula3.innerHTML =  "<button onclick='removeLinha(this)'>Remover</button>";
 }
 
 function salvaDados(id) {
