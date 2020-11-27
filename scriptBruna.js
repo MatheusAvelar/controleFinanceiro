@@ -18,16 +18,21 @@ function adicionaLinha(idTabela) {
     var celula1 = linha.insertCell(1);   
     var celula2 = linha.insertCell(2); 
     var celula3 = linha.insertCell(3);
+    valor = `idValor[`+ contadorValor +`]`;
+    descricao = `idDescricao[`+ contadorDescricao +`]`;
     celula0.innerHTML = RetornaDataHoraAtual();
-    celula1.innerHTML = `<input type="text" id="descricao" name="codDescricao[` + contadorDescricao + `]" placeholder="Produto">`;
-    celula2.innerHTML = `<input type="text" id="valor" name="codValor[`+ contadorValor +`]" placeholder="Valor">`;
-    celula3.innerHTML =  "<button onclick='removeLinha(this)'>Remover</button>";
+    celula1.innerHTML = `<input type="text" id="idDescricao[` + contadorDescricao + `]" name="codDescricao[` + contadorDescricao + `]" placeholder="Produto">`;
+    celula2.innerHTML = `<input type="text" id="idValor[`+ contadorValor +`]" name="codValor[`+ contadorValor +`]" placeholder="Valor">`;
+    celula3.innerHTML = "<button id'btnRemover' onclick='removeLinha(this)'>Remover</button><button id='btnSalvar' onclick='salvaDados(valor,descricao)'>Salvar</button>";
 }
 
-function salvaDados(id) {
-    var teste = document.getElementById(id).value;
-    document.getElementsByClassName("info-remover").innerHTML = teste;
-    document.getElementById(id).style.display = "none";
+function salvaDados(contValor,contDesc) {
+    valor = document.getElementById(contValor).value;
+    descricao = document.getElementById(contDesc).value;
+    alert('Descrição:'+descricao+' - Valor: R$'+valor+',00');
+    document.getElementById('btnSalvar').style.display = 'none';
+    document.getElementById(contValor).style.display = "none";
+    document.getElementById(contDesc).style.display = "none";
 }
 
 // funcao remove uma linha da tabela
