@@ -34,6 +34,4 @@ function salvaDados(id) {
 function removeLinha(linha) {
     var i=linha.parentNode.parentNode.rowIndex;
     document.getElementById('tbl').deleteRow(i);
-    contadorDescricao + 1;
-    contadorValor + 1;
 }
