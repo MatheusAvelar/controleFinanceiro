@@ -253,6 +253,11 @@ input[type="submit"]:hover{
   width:100%
 }
 
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 .TabControleFinanceiro td {
   border:solid 1px;
 }
