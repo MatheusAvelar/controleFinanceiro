@@ -21,6 +21,7 @@ function adicionaLinha(idTabela) {
     celula1.innerHTML = RetornaDataHoraAtual();
     celula2.innerHTML = `<input type="text" id="descricao" name="codDescricao[` + contadorDescricao + `]" placeholder="Produto">`;
     celula3.innerHTML = `<input type="text" id="valor" name="codValor[`+ contadorValor +`]" placeholder="Valor">`;
+    celula4.innerHTML =  "<button onclick='removeLinha(this)'>Remover</button>";
 }
 
 function salvaDados(id) {
