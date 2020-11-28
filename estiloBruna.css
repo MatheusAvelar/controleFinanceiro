@@ -78,7 +78,7 @@ input {
 input:not([type="checkbox"]){
   width: 98.8%;
   margin-top: 0px;
-  padding: 4px;    
+  padding: 2px;    
   border: 1px solid #f8f8ff;
   
   -webkit-border-radius: 3px;
