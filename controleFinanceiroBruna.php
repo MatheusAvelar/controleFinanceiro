@@ -27,7 +27,7 @@
                 <th class="coluna1">Data</th>
                 <th class="coluna2">Descrição</th>
                 <th class="coluna1">Valor</th>
-                <th class="coluna1">Remover</th>
+                <th class="coluna1">Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -35,7 +35,7 @@
                 <td class="info-data"></td>
                 <td class="info-descricao"></td>
                 <td class="info-valor"></td>
-                <td class="info-remover"></td>
+                <td class="info"></td>
             </tr>
         </tbody>
     </table>
